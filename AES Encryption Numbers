@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int in,en,m,aes=0;
+    cin>>in>>en;
+    for(in;in<=en;in++)
+    {
+        m=0;
+        for(int a=1;a<=in;a++)
+        {
+            if(in%a==0)
+            m++;
+        }
+        if(m==4)
+        aes++;
+    }
+    cout<<aes;
+}
